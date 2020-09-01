@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+       <head>
+    <!-- hier zet je de code in de head tags -->
+         <title> Eerste HTML pagina </title>
+         <link rel="stylesheet" type="text/css" href="styles.css">
+         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+       </head>
+      <body>
+         <!-- hier zet je de code in de body tags-->
+        <div class="container">
+          <header class="main-header">
+            <h1> MY FIRST PAGE </h1>
+          </header>
+          <nav>
+            <ul class="main-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">Over</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+              <hr class="line">
+          <main>
+            <article class="black-border">
+              <h2>Contact</h2>
+              <br>
+              <div class="formcontainer">
+                <form name="contact" method="POST" data-netlify="true">
+                  <p>
+                    <label>Je naam: <input type="text" name="name" /></label>  
+                  </p> 
+                  <p>
+                    <label>Email: <input type="email" name="email" /></label>
+                  </p>
+                  <p>
+                    <label>Telefoonnummer: <input type="tel" name="telefphone"></label>
+                  </p>
+                  <p>
+                    <label>Leeftijd: <input type="number" name="age"></label>
+                  </p> 
+                  <p>
+                    <label>Geboortedatum: <input type="date" name="birthday"></label>
+                  </p>
+                  <p>
+                    Geslacht:
+                    <label>Man <input type="radio" name="gender"> </label>
+                    <label>Vrouw <input type="radio" name="gender"> </label>
+                    <label>Overig <input type="radio" name="gender"> </label>
+                  </p>
+                    Favo keuken <span class="keuken">(meerdere keuzes mogelijk):</span>
+                    <label>Frans <input type="checkbox" name="kitchen1"></label>
+                    <label>Italiaans <input type="checkbox" name="kitchen2"></label>
+                    <label>Spaans <input type="checkbox" name="kitchen3"></label>
+                    <label>Arabisch <input type="checkbox" name="kitchen4"></label>
+                  <p>
+                  <label> Favo kleur short <input type="color" name="favcolor"></label>
+                  </p>
+                  <p>
+                    <label>Biografie: <textarea rows="8" cols="30" name="message"></textarea> </label>
+                  </p>
+                  <p>
+                    <label>Upload je laatste recept: <input type="file" name="myfile"></label>
+                  </p>
+                  <p>
+                    <button type="reset">Reset</button>
+                  </p>
+                  <p>
+                    <button type="submit">Voeg toe</button>
+                  </p>
+                </form>
+            </div>
+            </article>
+          </main>
+          <footer class="black-border2">
+            &copy; Dit is de footer
+          </footer>
+        </div>
+      </body>
+</html>
