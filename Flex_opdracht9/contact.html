@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+       <head>
+    <!-- hier zet je de code in de head tags -->
+         <title> Eerste HTML pagina </title>
+         <link rel="stylesheet" type="text/css" href="styles.css">
+         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+       </head>
+      <body>
+         <!-- hier zet je de code in de body tags-->
+        <div class="container">
+          <header class="main-header">
+            <h1> MY FIRST PAGE </h1>
+          </header>
+          <nav>
+            <ul class="main-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">Over</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </nav>
+              <hr class="line">
+          <main>
+            <article class="black-border">
+              <h2>Contact</h2>
+              <br>
+              <div class="formcontainer">
+                <form name="contact" method="POST" data-netlify="true">
+                  <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required />
+                  </div>
+                  <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required />
+                  </div>
+                  <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" />
+                  </div>
+                  <div>
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" min="1" max="200" step="5" />
+                  </div>
+                  <div>
+                    <label for="date">Birthdate</label>
+                    <input type="date" name="date" id="date" min="2019-06-10" />
+                  </div>
+                  <hr />
+          
+                  <div>
+                    Gender
+                    <div>
+                      <label for="male">Male</label>
+                      <input type="radio" name="gender" id="male" value="male" />
+                    </div>
+                    <div>
+                      <label for="female">Female</label>
+                      <input type="radio" name="gender" id="female" value="female" />
+                    </div>
+                  </div>
+                  <hr />
+                  <div>
+                    Favorite Cuisine
+                    <div>
+                      <label for="italian">Italian</label>
+                      <input type="checkbox" name="italian" id="italian" />
+                    </div>
+                    <div>
+                      <label for="french">French</label>
+                      <input type="checkbox" name="french" id="french" />
+                    </div>
+                    <div>
+                      <label for="spanish">Spanish</label>
+                      <input type="checkbox" name="spanish" id="spanish" />
+                    </div>
+                    <div>
+                      <label for="arabic">Arabic</label>
+                      <input type="checkbox" name="arabic" id="arabic" />
+                    </div>
+                  </div>
+                  <hr />
+          
+                  <div>
+                    <label for="color">Favoriete kleur van je schort</label>
+                    <input type="color" name="color" id="color" />
+                  </div>
+          
+                  <hr />
+          
+                  <div>
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" name="bio" rows="8" colomns="8"></textarea>
+                  </div>
+                  <input type="hidden" name="hidden" value="hi" />
+                  <div>
+                    <label for="file">File</label>
+                    <input id="file" type="file" name="file" />
+                  </div>
+          
+                  <div>
+                    <label for="url">URL</label>
+                    <input type="url" name="url" id="url" />
+                  </div>
+          
+                  <button type="reset">Reset</button>
+                  <button type="submit">Submit</button>
+                </form>
+            </div>
+            </article>
+          </main>
+          <footer class="black-border2">
+            &copy; Dit is de footer
+          </footer>
+        </div>
+      </body>
+</html>
