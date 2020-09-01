@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: rgb(238, 234, 234);
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+header {
+    height: 300px;
+    border: 5px solid rgb(94, 93, 100);
+    border-style: ridge;
+    background-color: lightseagreen;
+    margin-bottom: 20px;
+    
+}
+header h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    word-spacing: 0.5em;
+}
+
+nav {
+    text-align: left;
+    background-color: rgb(144, 167, 144);
+    border: 1px solid black;
+    padding: 10px;
+}
+.main-nav {
+    list-style-type: none;
+}
+.main-nav li{
+    display: inline;
+}
+.line {
+    border: 2px solid #000000;
+  }
+
+main h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+.black-border {
+    border: 1px solid black;
+}
+
+#green-background {
+    margin-left: 40px;
+}
+article, footer {
+    padding: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    background-color: #000000;
+    color: rgb(238, 234, 234);
+    border: 3px solid lightseagreen;
+}
+/* contactformulier styling*/
+form {
+    background-color: #ececec;
+  }
+
+input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    padding: 6px;
+    margin: 5px;
+}
+
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    padding: 6px;
+    margin: 5px;
+}
+label {
+    width: 240px;
+    display: inline-block;
+}
+input {
+    width: 420px;
+}
+button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    padding: 6px;
+    margin: 5px;
+    background-color: rgb(94, 93, 100);
+}
+
+
+
+/* contactformulier styling END*/
+
+
+/* Media queries
+// Smartphones (portrait)
+minimale breedte : 320px;
+
+// Tablets (portrait)
+minimale breedte : 768px
+
+// Desktop 
+minimale breedte : 1024px */
+
+@media (min-width: 1024px) {
+    body { 
+        background-color: rgb(198, 207, 228);
+        font-size: 24px;
+    }
+    header {
+        color: red;
+    }
+    header h1 {
+        font-size: 120px;
+        letter-spacing: 0.1em;
+        word-spacing: 0.4em;
+    }
+    .black-border {
+        line-height: 1.6em;
+    }
+}
+
