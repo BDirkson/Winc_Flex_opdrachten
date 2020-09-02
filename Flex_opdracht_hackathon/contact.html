@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- hier zet je de code in de head tags -->
+        <title> Konijnenclub Alkmaar </title>
+        <link rel="stylesheet" type="text/css" href="styles-about.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/3cf62f56ca.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div class="grid-container-contact"> 
+        <header class= "main-head">
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <!--
+                  A fake / hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.
+                  -->
+                  <input type="checkbox" />
+                  
+                  <!--
+                  Some spans to act as a hamburger.
+                  
+                  They are acting like a real hamburger,
+                  not that McDonalds stuff.
+                  -->
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <!--
+                  Too bad the menu has to be inside of the button
+                  but hey, it's pure CSS magic.
+                  -->
+                  <ul id="menu">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="about.html"><li>Over</li></a>
+                    <a href="media.html"><li>Media</li></a>
+                    <a href="#"><li>Contact</li></a>
+                  </ul>
+                </div>
+              </nav>
+            <h1>Konijnenclub Alkmaar</h1> 
+            <p>Want een konijn zijn is fijn!</p>
+            
+        </header>
+            <article class="content6">
+                <h1> Lid worden</h1>
+                <hr style="height:1px;border-top:10px solid  rgb(10, 109, 155)"> <br>
+                <div class="formcontainer">
+                    <form name="contact" method="POST" data-netlify="true">
+                      <div>
+                        <label for="name">Naam</label>
+                        <input type="text" name="name" id="name" required />
+                      </div>
+                      <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required />
+                      </div>
+                      <div>
+                        <label for="tel">Telefoonnummer</label>
+                        <input type="tel" name="tel" id="tel" required />
+                      </div>
+                      <div>
+                        <label for="lid">Ja ik word lid!</label>
+                        <input type="radio" name="lidinfo" id="lid" value="lid" />
+                      </div>
+                      <div>
+                        <label for="info">Ik wil meer info</label>
+                        <input type="radio" name="lidinfo" id="info" value="info" />
+                      </div>
+                      <div>
+                        <button class="submit" type="submit">Submit</button>
+                      </div>
+                    </form>
+                </div>
+            </article>
+        <footer class="main-footer">
+            <br>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/bart-dirkson/" class="fab fa-linkedin-in"></a>
+                <a href="https://github.com/BDirkson" class="fab fa-github"></a>
+                <a href="https://wa.me/+31636398022" class="fab fa-whatsapp"></a>
+            </div>
+            <br>
+            <p> <i class="far fa-copyright"></i> 2020 BACON </p>
+        </footer>
+    </div>
+    </body>
+</html>
+
+
+
+
+
+
+
