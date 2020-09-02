@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+}
+
+.grey {
+    color: grey;
+}
+
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+p {
+    font-size: 30px;
+}
+
+.container-carla {
+    border: 1px solid black;
+    margin-right: 10px;
+    position: relative;
+    padding: 10px;
+}
+
+.form-carla {
+    border: 1px solid black;
+    margin-right: 10px;
+    padding: 10px;
+}
+.container-marijn {
+    border: 1px solid black;
+    position: relative;
+    padding: 10px;
+}
+
+.form-marijn {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.container-carla > img {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.container-marijn > img {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+img {
+    width: 70px;
+    height: 90px;
+    object-fit: cover;
+}
+/*flex*/
+
+.form-marijn, .form-carla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.approve {
+    border: 1px solid green;
+    font-size: 30px;
+    color: green;
+    width: 300px;
+    text-align: center;
+    height: 90px;
+    padding: 20px;
+}
+.decline {
+    border: 1px solid red;
+    font-size: 30px;
+    color: red;
+    width: 300px;
+    text-align: center;
+    height: 90px;
+    padding: 20px;
+}
+
+
+/*grid*/
+.container-carla { grid-area: carla; }
+
+.container-marijn { grid-area: marijn; }
+
+.form-carla { grid-area: form-carla; }
+
+.form-marijn { grid-area: form-marijn; }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 150px;
+    gap: 1px;
+    grid-template-areas:
+      "carla marijn"
+      "form-carla form-marijn"
+  }
