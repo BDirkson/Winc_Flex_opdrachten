@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* NAV */
+.nav {
+  width: 100%;
+  overflow: auto;
+  background-color: darkblue;
+  
+}
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav li{
+  display: inline;
+  color: white;
+}
+
+.nav ul li a {
+  width: 120px;
+  padding: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family:'Open Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#search {
+  width: 400px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 600px;
+}
+
+
+
+.currentpage {
+  background-color: grey;
+}
+/* NAV END*/
+.head {
+  background-color: aqua;
+  color: black;
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.content {
+  background-color: rgb(189, 189, 189);
+  color: black;
+  border: 2px solid black;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.vertel textarea {
+  width: 400px;
+  border: 1px solid black;
+}
+.footer {
+  background-color: aqua;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  margin-top: 10px;
+  padding: 20px;
+}
+/*pseudo classes and elements*/
+.link1:hover {
+  background-color: lightblue;
+}
+.link2:active {
+  background-color: red;
+  font-style: italic;
+  color: black;
+}
+.link3:visited {
+  background-color: rgb(227, 241, 28);
+}
+
+.vertel textarea:focus {
+  font-family: 'Open Sans', sans-serif;
+  color: green;
+  font-size: 20px;
+}
+.nav li:hover {
+  background-color: lightblue;
+}
+
+#search:focus {
+  border: 5px solid aqua;
+}
