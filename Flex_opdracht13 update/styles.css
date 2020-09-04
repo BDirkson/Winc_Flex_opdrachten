@@ -113,10 +113,16 @@ padding: 0 12px;}
   color: green;
   font-size: 20px;
 }
-.nav li:hover {
+#search:focus {
+  border: 5px solid aqua;
+}
+.currentpage:hover {
   background-color: lightblue;
 }
 
-#search:focus {
-  border: 5px solid aqua;
+.about:hover {
+  background-color: lightblue;
+}
+.contact:hover {
+  background-color: lightblue;
 }
