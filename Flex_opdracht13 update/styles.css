@@ -19,6 +19,7 @@ html, body {
   height: 80px;
   border: 2px solid black;
   background-color: darkblue;
+  align-items: center;
 }
 
 .nav-items li {
