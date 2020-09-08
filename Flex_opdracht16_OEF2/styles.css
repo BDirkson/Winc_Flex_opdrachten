@@ -1,0 +1,24 @@
+
+  div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    /*transition-duration: 2000ms;
+    transition-property: width;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0ms;*/
+    transition: 2000ms width ease-in-out
+
+}
+
+div:hover {
+    width: 300px;
+}
+
+
+
+  
+
+  
+  
+  
