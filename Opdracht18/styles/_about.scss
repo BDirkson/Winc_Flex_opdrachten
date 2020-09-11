@@ -4,33 +4,28 @@
     max-width: 700px;
     text-align: center;
     padding: $textpadding;
-  }
-  .about__text-about p {
-    text-align: justify;
-    padding-bottom: 1em;
-    line-height: 1.4em;
-  }
-  .about {
+    &__text-about p {
+        text-align: justify;
+        padding-bottom: 1em;
+        line-height: 1.4em;}
+}
+.about {
     @include style;
     padding: $textpadding;
-  }
-  .about .about__wrapper {
-    display: flex;
-  }
-  
-  .about__video-wrapper {
-    position: relative;
-    padding-bottom: 33.25%;
-    overflow: hidden;
-    align-self: center;
-    flex: 2 0 55%;
-    margin: 1.4em 0;
-  }
-  
-  .about__video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+    &__wrapper {
+        display: flex;
+    }
+    &__video-wrapper {
+        position: relative;
+        padding-bottom: 33.25%;
+        overflow: hidden;
+        align-self: center;
+        flex: 2 0 55%;
+        margin: 1.4em 0;}
+        &__video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;}
+}

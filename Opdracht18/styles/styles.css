@@ -16,7 +16,7 @@ header {
   box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
 }
 
-.header__brand-logo img {
+header__brand-logo img {
   width: auto;
   padding-top: 20px;
   height: 7.5em;
@@ -83,12 +83,10 @@ header {
 
 /* Featured Section */
 .featured {
-  background-color: #e9a781;
-  font-family: 'Courier New', Courier, monospace;
   padding: 20px;
 }
 
-.featured .featured__wrapper {
+.featured__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,7 +104,7 @@ header {
   padding: 20px;
 }
 
-.featured__text-featured p {
+.featured__text-featured__text-featured p {
   text-align: justify;
   padding: 30px;
   line-height: 1.4em;
@@ -119,7 +117,7 @@ header {
   padding: 20px;
 }
 
-.about__text-about p {
+.about__text-about__text-about p {
   text-align: justify;
   padding-bottom: 1em;
   line-height: 1.4em;
@@ -131,7 +129,7 @@ header {
   padding: 20px;
 }
 
-.about .about__wrapper {
+.about__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,7 +161,7 @@ header {
   padding: 20px;
 }
 
-.contact__wrapper .contact {
+.contact__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,13 +169,8 @@ header {
       flex-wrap: wrap;
 }
 
-.contact__form-wrapper,
-.contact__wrapper {
+.contact__form-wrapper {
   padding: 20px;
-}
-
-.copy-wrapper {
-  padding-left: 20px;
 }
 
 /* Global */
@@ -282,4 +275,7 @@ input {
 }
 
 /* Pas alleen de onderstaande regels aan */
+.copy-wrapper {
+  padding-left: 20px;
+}
 /*# sourceMappingURL=styles.css.map */

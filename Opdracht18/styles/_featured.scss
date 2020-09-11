@@ -1,12 +1,10 @@
 /* Featured Section */
 .featured {
-    @include style;
     padding: $textpadding;
-  }
-  .featured .featured__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;}
+}
   
   #featured .featured__image img {
     width: 300px;
@@ -16,10 +14,9 @@
     max-width: 700px;
     text-align: center;
     padding: $textpadding;
-  }
-  .featured__text-featured p {
+    &__text-featured p {
     text-align: justify;
     padding: 30px;
-    line-height: 1.4em;
+    line-height: 1.4em;}
   }
   

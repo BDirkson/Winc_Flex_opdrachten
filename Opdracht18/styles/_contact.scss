@@ -1,16 +1,12 @@
 /* Contact Section */
 .contact {
     padding: $textpadding;
-  }
-  .contact__wrapper .contact {
+    &__wrapper {
     display: flex;
     flex-wrap: wrap;
-  }
-  .contact__form-wrapper,
-  .contact__wrapper {
+    }
+    &__form-wrapper {
     padding: $textpadding;
-  }
-  
-  .copy-wrapper {
-    padding-left: $textpadding;
-  }
+    }
+}
+
