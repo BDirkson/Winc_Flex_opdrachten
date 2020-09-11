@@ -1,0 +1,7 @@
+$textcolor: rgb(75, 38, 3);
+$textpadding: 20px;
+
+@mixin style {
+    background-color: rgb(233, 167, 129);
+    font-family: 'Courier New', Courier, monospace;
+}
