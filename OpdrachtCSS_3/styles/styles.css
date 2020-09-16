@@ -1,0 +1,85 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  background: lightgray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+.nav {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translate(250px, 0);
+          transform: translate(250px, 0);
+}
+
+.nav a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  display: block;
+  padding: 20px;
+  width: 300px;
+  -webkit-transition: 1500ms;
+  transition: 1500ms;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.nav a:hover {
+  -webkit-transform: translate(-200px, 0);
+          transform: translate(-200px, 0);
+}
+
+.nav i {
+  margin-right: 30px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.nav__lap a,
+.nav__lap i {
+  background: #e17b77;
+}
+
+.nav__twitter a,
+.nav__twitter i {
+  background: #007bb6;
+}
+
+.nav__linkedin a,
+.nav__linkedin i {
+  background: #2867B2;
+}
+
+.nav__facebook a,
+.nav__facebook i {
+  background: #3b5998;
+}
+
+.nav__github a,
+.nav__github i {
+  background: #333;
+}
+/*# sourceMappingURL=styles.css.map */

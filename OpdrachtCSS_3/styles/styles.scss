@@ -1,0 +1,53 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    background: lightgray;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+.nav {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(250px, 0);
+    & a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    display: block;
+    padding: 20px;
+    width: 300px;
+    transition: 1500ms;
+    transition-property: transform;}
+        & a:hover {
+        transform: translate(-200px, 0)}
+            & i {
+            margin-right: 30px;
+            font-size: 20px;
+            width: 20px;
+            height: 20px;}
+                &__lap a, 
+                &__lap i {
+                background: #e17b77;}
+                &__twitter a, 
+                &__twitter i {
+                background: #007bb6;}
+                &__linkedin a, 
+                &__linkedin i {
+                background: #2867B2;}
+                &__facebook a, 
+                &__facebook i {
+                background: #3b5998;}
+                &__github a, 
+                &__github i {
+                background: #333;}
+}
