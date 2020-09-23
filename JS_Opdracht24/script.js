@@ -1,11 +1,12 @@
 //DEEL 1 - OBJECT - persoon met naam en leeftijd
-/*
+
 let person = {
   name: "Bart",
   age: 43
 };
 
-// dot notation: console.log (person.age);
+// dot notation: 
+console.log (person.age);
 // bracket notation:
 console.log (person["name"]);
 
@@ -17,20 +18,18 @@ console.log (evaluations);
 let kiesKleur = ["groen", "blauw", "rood" ];
 // laatste item kiezen van array dmv .slice(-1)[0]
 // console.log (kiesKleur.slice(-1)[0]);
+console.log(kiesKleur[kiesKleur.length - 1]);
 
 kiesKleur [3] = "geel"; 
 //of via push methode
 kiesKleur.push(5);
 
-//OBJECT 
-let object = {greeting: "hi ik ben een object"};
-
 // OBJECT aan ARRAY toevoegen
+kiesKleur.push({ greeting: "Hi ik ben een object" });
 
-kiesKleur.push(object);
-//console.log (kiesKleur);
-console.log (kiesKleur.slice(-1)[0]);
-*/
+// laastte object uit de array kiezen
+console.log(kiesKleur[kiesKleur.length - 1].greeting);
+
 //DEEL3 - Bekijk een "real-life" object
 
 const catBreeds = [{
@@ -80,3 +79,14 @@ const catBreeds = [{
 }
 ]
 // log naam laatste kattenras
+console.log("Naam laatste kattenras:", catBreeds[2].name);
+// log energy level eerst kat
+console.log("Energy level eerste kat:", catBreeds[0].energy_level);
+// log erste temperament van de temperamenten van de tweede kat
+console.log("Eerste temperament tweede kat:", catBreeds[1].temperament[0]);
+//Log het laatst temperament van de temperamenten van de derde kat.
+const lengthTemperamentsCatThree = catBreeds[2].temperament.length;
+console.log("Laatste temperament derde kat:", catBreeds[2].temperament[lengthTemperamentsCatThree - 1]);
+//Log het favoriete voedsel van de derde kat
+console.log("Favoriet voedsel derde kat:", catBreeds[2].food.favourite_food);
+
