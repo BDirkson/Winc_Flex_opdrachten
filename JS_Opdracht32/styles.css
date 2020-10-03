@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  background-color: lightgray;
+}
+
+.btn-toggle-nav {
+    position: fixed;
+    height: 100px;
+    width: 120px;
+    background-image: url(bars-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    cursor: pointer;
+}
+.btn-toggle-nav:hover {
+    opacity: 0.5;
+}
+.nav-sidebar {
+    position: fixed;
+    left: 0;
+    top: 80px;
+    height: 350px;
+    width: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1000;
+    transition: all 500ms ease-in-out;
+}
+
+.nav-sidebar ul {
+    padding-top: 15px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all 500ms ease-in-out;
+}
+
+.nav-sidebar ul li {
+    line-height: 60px;
+    list-style: none;
+}
+.nav-sidebar ul li a {
+    display: block;
+    height: 60px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    transition: all 500ms ease-in-out;
+}
+
+.nav-sidebar a:hover {
+    opacity: 0.5;
+}
+
+.nav-sidebar_home {
+    background-color: lightgray;
+    border: 2px solid lightgrey;
+}
+.nav-sidebar_red {
+    background-color: red;
+    border: 2px solid lightgrey;
+}
+.nav-sidebar_orange {
+    background-color: orange;
+    border: 2px solid lightgrey;
+}
+.nav-sidebar_purple {
+    background-color: purple;
+    border: 2px solid lightgrey;
+}
+.nav-sidebar_green {
+    background-color: green;
+    border: 2px solid lightgrey;
+}
+.red-background {
+    background-color: red;
+}
+.orange-background {
+    background-color: orange;
+}
+.purple-background {
+    background-color: purple;
+}
+.green-background {
+    background-color: green;
+}
+
+.colorDiv {
+    position: fixed;
+    top: 50%;
+    left: 30%;
+}
+.colorP {
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
