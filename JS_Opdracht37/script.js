@@ -104,7 +104,7 @@ const superHereos = [
     "publisher": "Marvel Comics",
     "alter_ego": "Norrin Radd",
     "first_appearance": "The Fantastic Four #48",
-    "weight": "unknown"
+    "weight": "unkown"
     }
     ]
 
@@ -137,7 +137,7 @@ console.log (superHeroes200);
 //4 Maak een array met first_appearance comics
 
 const firstComic = superHereos.map ((item) => {
-    return "In comic: " + item.first_appearance + " trad deze held voor het eerst op: " + item.name
+    return "In comic: " + item.first_appearance + " trad deze held: " +item.name + " voor het eerst op."
 });
 
 console.log (firstComic);
@@ -160,12 +160,28 @@ console.log (marvelHeroes);
 
 //6 //7 gewicht optellen van superHeroes
 
- let sumWeightSuperheroes = superHereos.reduce((acc, li) => {
-    return li.npublisher == "DC Comics" ? acc :acc + li.weight;
-  }, 0);
+// eerste DS helden er uit filteren, weight string values -> number en dan reduce om gewicht op te tellen.
+// extra filter om unkown uit weight te halen
+const totWeightSuperheroesDC = superHereos.filter((item) => {
+    return item.publisher === "DC Comics"
+}).map ((item) => {
+    return parseInt(item.weight); 
+}).reduce(( accumulator, weight ) =>  accumulator + weight);
 
-console.log (sumWeightSuperheroes);
+console.log (totWeightSuperheroesDC);
 
-// geen idee hoe in de functie dan om te gaan met de getallen die string waardes zijn. Ik moet iets met method map doen...
+const totWeightSuperheroesMarvel = superHereos.filter((item) => {
+    return item.publisher === "Marvel Comics"
+}).map ((item) => {
+    return parseInt(item.weight); 
+}).reduce((accumulator, weight) => {
+    return accumulator + (weight || 0);
+});
 
+console.log (totWeightSuperheroesMarvel);
+
+//8 Zwaarste superheld
+
+
+//get min/max value of arrays
 
