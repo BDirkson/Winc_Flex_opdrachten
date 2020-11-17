@@ -74,39 +74,3 @@ const checkOneData = async (id, data, state) => {
 
 
 
-/*
-addButton.addEventListener("click",()=>{
-  const input= document.getElementById("textfield").value;//
-  const textNode = document.createTextNode(input);//
-  const removeIcon = document.createElement(`button`);//
-  removeIcon.innerHTML = `<i class="fas fa-trash-alt"></i>`;//
-  removeIcon.classList.add('fas', 'fa-trash-alt');//
-  const listLi = document.createElement("li"); //
-  listLi.appendChild(textNode);
-  listLi.appendChild(removeIcon);
-  list.appendChild(listLi); 
-  removeIcon.addEventListener("click", ()=>{
-    list.removeChild(listLi);
-  }); 
-}); 
-
-const toDOM = async () => {
-  const tasks = await getData();
-  list.innerHTML = '';
-  tasks.forEach(task => {
-    const listLi = document.createElement("li");
-    const input= document.getElementById("textfield").value;
-    const textNode = document.createTextNode(input);
-    const removeIcon = document.createElement(`button`);
-    removeIcon.innerHTML = `<i class="fas fa-trash-alt"></i>`;
-    removeIcon.classList.add('fas', 'fa-trash-alt');
-    listLi.appendChild(textNode);
-    listLi.appendChild(removeIcon);
-    list.appendChild(listLi); 
-    removeIcon.addEventListener("click", async()=>{
-      await delOneData(task._id);
-      list.removeChild(listLi);
-      toDOM();
-    });
-  })}; 
-*/
