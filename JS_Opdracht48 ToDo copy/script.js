@@ -32,8 +32,8 @@ const addTo = async () => {
       checkIcon.addEventListener("click", async ()=>{
         if(task.done == false){
             await checkOneData (task._id, task.description, true);
-            checkIcon.classList.add("blue");
-            listLi.classList.add("line-through");
+            //checkIcon.classList.add("blue");
+            //listLi.classList.add("line-through");
             addTo();
         } if(task.done == true){
             await checkOneData(task._id, task.description, false);
@@ -48,6 +48,10 @@ const addTo = async () => {
         await delOneData (task._id);
     addTo();
     })
-  })};
+    if (task.done == true) {
+      checkIcon.classList.add("blue");
+      listLi.classList.add("line-through");
+    }
+})};
 
 addTo();
