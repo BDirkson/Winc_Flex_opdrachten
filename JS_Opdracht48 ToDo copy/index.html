@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>To do list</title>
+    <meta name="description" content="HTML5 Postman test">
+    <meta name="author" content="SitePoint">
+    <script src="https://kit.fontawesome.com/3cf62f56ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+   
+  </head>
+
+  <body>
+ <div class="container">
+    <header>
+      <h1>To Do List</h1>
+    </header>
+    <form>
+        <input type="text" placeholder="Type something..." id="textfield" />
+        <input type="button" class="add-button" value="Add task" />
+    </form>
+
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+
+    <div class="del-container">
+      <input type="button" class="del-button" value="Delete tasks" />
+    </div>
+
+    <script defer src="api-client.js"></script>
+    <script defer src="script.js"></script>
+  </div>
+</body>
+</html>

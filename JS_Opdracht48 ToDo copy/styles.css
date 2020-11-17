@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+header, form, h1, .del-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-container {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+header{
+    padding: 30px 40px;
+    color: black;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: lightgray;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-style: italic;
+}
+
+input {
+    width: 75%;
+    margin-right: 0;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.add-button {
+    width: 25%;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+.add-button:hover {
+    background-color: lightgreen;
+    color: black
+} 
+.del-button {
+    width: 25%;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+.del-button:hover {
+    background-color: rgb(245, 45, 19);
+    color: black
+} 
+
+ul li {
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li:nth-child(odd){
+    background-color: rgb(245, 245, 245);
+}
+
+.fas {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px;
+    border-radius: 10px;
+}
+.fas:hover {
+    background-color: red;
+    color: white;
+}
+
+.far {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 12px 16px 12px;
+    border-radius: 10px;
+}
+.far:hover {
+    background-color: lightgreen;
+    color: black;
+}
+.line-through{
+    text-decoration: line-through;
+    color: green
+}
+
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
