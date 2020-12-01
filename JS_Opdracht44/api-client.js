@@ -1,7 +1,7 @@
 //Opdracht : Async/Await
 
 // API-sleutel (v3 auth)
-// e8b51a64b4ff0116ab370b1c20371ee2
+// xxxxxxx
 
 // Voorbeeld API-aanvraag
 // https://api.themoviedb.org/3/movie/550?api_key=e8b51a64b4ff0116ab370b1c20371ee2
@@ -11,7 +11,7 @@
 
 // string interpolation gebruiken om API key en apiUrl samen te voegen - API_KEY toevoegen ?api_key=
 
-const API_KEY = "e8b51a64b4ff0116ab370b1c20371ee2";
+const API_KEY = "xxxxxxx";
 const apiUrl = "https://api.themoviedb.org/3/genre/movie/list";
 
 const apiLink = (`${apiUrl}?api_key=${API_KEY}`);
